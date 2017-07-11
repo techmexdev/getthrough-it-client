@@ -6,6 +6,7 @@ import withUserMedia from '../hocs/withUserMedia'
 
 import Video from '../components/Video'
 import Editor from '../components/Editor'
+import Eval from '../components/Eval'
 
 class Lobby extends PureComponent {
   constructor(props) {
@@ -101,6 +102,7 @@ class Lobby extends PureComponent {
           value={this.state.editorValue}
           onChange={this.onEditorChange}
         />
+        <Eval value={this.state.editorValue} />
       </div>
     )
   }
